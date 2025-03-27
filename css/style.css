@@ -1,0 +1,189 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav ul li a {
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+  transform: scale(1.1);
+}
+
+/* Section Styling */
+section {
+  padding: 50px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#pendahuluan {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  text-align: center;
+}
+
+#materi {
+  background: linear-gradient(135deg, #42e695, #3bb2b8);
+  color: white;
+}
+
+#quiz {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: white;
+  text-align: center;
+}
+
+#developer {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Video Styling */
+video {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling */
+img {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* List Styling */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 30px;
+    max-width: 95%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+/* Foto Developer Berbentuk Oval */
+#developer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: auto;
+  clip-path: ellipse(50% 50%);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  border: 5px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Hover Effect */
+#developer img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+  border: 5px solid rgba(255, 255, 255, 1);
+}
+
+/* Developer Container */
+#developer .developer-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #developer .developer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Justify text */
+#quiz {
+  text-align: justify;
+}
+
+/* Untuk judul tetap rata tengah */
+#quiz h2 {
+  text-align: center;
+}
+
+.developer-container {
+  display: flex;
+  justify-content: center; /* Agar foto center */
+  align-items: center;
+  gap: 20px; /* Beri jarak antar foto */
+  flex-wrap: wrap;
+}
+
+.developer-container img {
+  width: 160px; /* Sesuaikan ukuran */
+  height: 160px; /* Sesuaikan ukuran */
+  object-fit: cover; /* Agar wajah tetap proporsional */
+  border-radius: 50%; /* Bentuk bulat */
+  border: 5px solid white; /* Tambahkan border biar rapi */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.developer-container img:hover {
+  transform: scale(1.1); /* Efek zoom saat hover */
+}
